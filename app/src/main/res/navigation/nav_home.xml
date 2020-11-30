@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.prueba.appgate.ui.home.main.HomeFragment"
+        tools:layout="@layout/home_fragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_intentosFragment"
+            app:destination="@id/intentosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_registroFragment"
+            app:destination="@id/registroFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            app:nullable="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/intentosFragment"
+        android:name="com.prueba.appgate.ui.home.intentos.IntentosFragment"
+        tools:layout="@layout/historial_fragment"
+        android:label="IntentosFragment" >
+        <action
+            android:id="@+id/action_intentosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            app:nullable="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        tools:layout="@layout/registro_fragment"
+        android:name="com.prueba.appgate.ui.home.registro.RegistroFragment"
+        android:label="RegistroFragment" >
+        <action
+            android:id="@+id/action_registroFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

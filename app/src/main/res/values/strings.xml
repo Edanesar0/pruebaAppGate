@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PruebaAppGate</string>
+    <string name="key_preferences" translatable="false">key_preferences</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="username">Usuario:</string>
+    <string name="password">Contraseña:</string>
+    <string name="comfirm_password">Confirmar contraseña:</string>
+    <string name="not_register">¿No registrado? </string>
+    <string name="sigup"><u>Crea una cuenta</u></string>
+    <string name="error_user">Ingrese usuario</string>
+    <string name="error_pass">Ingrese contraseña</string>
+    <string name="error_pass_confrim">Ingrese confirmacion de contraseña</string>
+    <string name="error_pass_confrim_equals">Las contraseñas no coinciden</string>
+    <string name="error_pass_leng">La contraseña debe ser de mas de 8 caracteres</string>
+    <string name="error_pass_con_leng">La confirmacion de contraseña debe ser de mas de 8 caracteres</string>
+    <string name="error_email">Ingrese email valido</string>
+    <string name="fecha">Fecha</string>
+    <string name="resultado">Resultado</string>
+    <string name="registrar">Registrar</string>
+    <string name="error_user_register">Usuario ya registrado</string>
+    <string name="user_register">Usuario registrado</string>
+    <string name="registro_de_usuario">Registro de usuario</string>
+    <string name="inicio_de_sesion">Inicio de sesión</string>
+</resources>
